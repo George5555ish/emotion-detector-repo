@@ -1,0 +1,355 @@
+
+.buttonContainer {
+    width: auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  
+  .transition-img-vid{
+    position: absolute;
+    margin-right: 150px;
+    transition: 0.5s;
+    width: 150px;
+    height: 150px;
+  }
+
+  .homeContainer{
+    display: flex;
+    justify-content: center;
+   
+    flex-direction: row;
+  }
+
+  .homeContainer2{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    flex-direction: column;
+  }
+
+  .emotionGrid{
+    margin-right: 20px;
+  }
+  .fixer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  /* //ADJUST YOUR CAMERA CSS */
+  .showFaceText{
+    position: absolute;
+      top: 20px;
+      left: 10px;
+      color: white;
+      font-size: 15px;
+    transition: 0.5s;
+    animation-name: adjust;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes adjust {
+    0% {
+      opacity: 1
+    }
+     75%{
+       opacity: 0.25;
+     }
+     100% {
+       opacity: 1
+     }
+  }
+  .btn {
+    margin: 20px auto;
+    border: none;
+    padding: 10px 44px;
+    font-size: 36px;
+    position: relative;
+  }
+  .btn::before {
+    -webkit-transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+  }
+  .btn .btn-text {
+    cursor: pointer;
+    color: white;
+    mix-blend-mode: difference;
+  }
+  .btn:hover::before {
+    background: black;
+    cursor: pointer;
+    width: 100%;
+  }
+  .btn.rounded {
+    border-radius: 50px;
+  }
+  .btn.rounded .text-green {
+    color: #00F0B5;
+    mix-blend-mode: difference;
+  }
+  .btn.rounded::before {
+    border-radius: 50px;
+    width: 25%;
+    background: #00F0B5;
+  }
+  .btn.rounded:hover::before {
+    background: #00F0B5;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  /* VIDEO RECOG */
+
+  .video-cont{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   background: #010615;
+}
+
+.video-box-child{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  transition: 0.5s;
+  z-index: 3;
+ 
+}
+
+.video-box-child:hover{
+  height: 400px;
+}
+
+#hoverOn1  .video-box-child{
+  height: 400px;
+}
+
+.video-box-child .imgBx{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #010615;
+}
+
+
+.video-box-child .imgBx img{ 
+
+  max-width: 100%;
+  opacity: 0.1;
+  transition: 0.5s;
+}
+
+.video-box-child:hover .imgBx img{ 
+  opacity: 1;
+
+}
+
+#hoverOn0  .imgBx img, #hoverOn1  .imgBx img, #hoverOn2  .imgBx img, #hoverOn3  .imgBx img, #hoverOn4  .imgBx img, #hoverOn5  .imgBx img{
+  opacity: 1;
+}
+
+.video-box-child:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px; 
+  bottom: -2px;
+  background: rgb(17, 16, 16);
+  z-index: -1;
+}
+
+.video-box-child:after{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px; 
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(35px);
+}
+
+.video-box-child:before,.video-box-child::after{
+  background:linear-gradient(235deg,#89ff00, #010615, #00bcd4)
+}
+
+.video-box-child:nth-child(2):before,.video-box-child:nth-child(2):after{
+  background:linear-gradient(235deg, #ff005e, #010615, #fbff00)
+}
+
+.video-box-child:nth-child(3):before,.video-box-child:nth-child(3):after{
+  background:linear-gradient(235deg, #772aff, #010615, #2196f3)
+}
+
+.video-box-child:nth-child(4):before,.video-box-child:nth-child(4):after{
+  background:linear-gradient(235deg, #885ad6, #010615, #9ec041)
+}
+
+.video-box-child:nth-child(5):before,.video-box-child:nth-child(5):after{
+  background:linear-gradient(235deg, #c9a692, #010615, #21f190)
+}
+
+.video-box-child:nth-child(6):before,.video-box-child:nth-child(6):after{
+  background:linear-gradient(235deg, #cacaca, #010615, #e4abbc)
+}
+
+
+
+.video-box-child .box-content {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  height: 80px;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+   align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.video-box-child:hover .box-content {
+  opacity: 1;
+}
+
+#hoverOn0 .box-content ,#hoverOn1 .box-content, #hoverOn2 .box-content, #hoverOn3 .box-content, #hoverOn4 .box-content, #hoverOn5 .box-content     {
+  opacity: 1;
+}
+
+.video-box-child .box-content h2 {
+font-size: 20px;
+color: #fff;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 1.2px;
+}
+
+.video-box-child .box-content h2 span{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px 0;
+  color: #fff;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 1.2px;
+  }
+
+  .positionAbsolute{
+    position: absolute;
+    background: #000;
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    z-index: -50;
+  }
+.box-content button{
+  border: none;
+  color: rgba(0,0,0,1);
+  padding: 5px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  transition: 0.5s;
+}
+
+.box-content button:hover {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 6px;
+  color: rgb(36, 17, 17);
+}
+
+.box-span-div{
+  color: green;
+}
+
+.box-h2-div{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* VIDEO IDENTITY CSS FILES */
+
+/* body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+} */
+.vidIden-cont{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+canvas{
+  position: absolute;
+ 
+  /* width: 100%;
+  height: 100%; */
+  top:15px;
+ left: 0;
+}
+
+
+
+/* 
+FINAL SOLUTION  */
+
+.descriptionDiv{
+  margin: 35px;
+  background:linear-gradient(235deg, #772aff, #556081, #2196f3);
+
+  border: 2px solid rgb(46, 39, 110);
+  padding:10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 12px 8px rgb(169, 169, 236);
+  width: 60%;
+}
+
+.descriptionDiv h2{
+  font-family: 'Roboto' sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+}
