@@ -68,7 +68,7 @@ const VidRecog = ({ denyAccess,  closeSafely}) => {
             imgSrc: simi,
             name: 'Simisanya',
             imageText: 'simi',
-            content: "Super Instagram Personality",
+            content: "Gorgeous IG Personality",
            
           },
       

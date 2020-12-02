@@ -18,7 +18,7 @@ const ImageCards = ({
   const classes = useStyles();
   const infoCards = [
     {
-      title: "Video Recognition",
+      title: "Video Recognition with AI",
 
       text: "Determine your facial expressions in any video with Artificial Intelligence!",
     },
