@@ -20,3 +20,21 @@ body {
      font-family: 'Roboto', sans-serif;
      width: 100%;
    }
+
+
+   .welcomeAppBar{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    margin: 25px;
+    /* background:linear-gradient(235deg, #772aff, #556081, #2196f3); */
+    transition: 0.5s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* border: 2px solid rgb(119, 108, 218); */
+    padding:10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 12px 8px rgb(169, 169, 236);
+    /* width: 85%; */
+    padding-bottom:  20px;
+   }

@@ -76,7 +76,23 @@ const App = () => {
         
       </AppBar>
       
+    {showWelcome && <div className="welcomeAppBar">
+      <Typography variant="h2" color="textSecondary">
+        Welcome to Express Yourself!
+      </Typography>
 
+      <Typography varint="body2" gutterBottom>
+        These are small emotion detectors that use <strong>your </strong>
+        facial expressions to decipher how you're feeling at any given point..
+        <br />
+        With the help of Google's FaceAPI, we can use Artificial Intelligence to draw a canvas
+        as an overlay over any image (or video) and get facial features, using your input as testing data.
+      <br />
+      {" "}
+      <br />
+        <strong> Have Fun!</strong>
+      </Typography>
+    </div>}
       <Grow in enter>
       
         {showWelcome ? (
