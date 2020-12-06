@@ -40,11 +40,13 @@
   }
 
   /* //ADJUST YOUR CAMERA CSS */
+  /* The white blinking text on the webcam */
   .showFaceText{
     position: absolute;
       top: 20px;
       left: 10px;
       color: white;
+      font-weight: bold;
       font-size: 15px;
     transition: 0.5s;
     animation-name: adjust;
