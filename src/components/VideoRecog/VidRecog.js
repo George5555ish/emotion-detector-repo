@@ -115,7 +115,7 @@ const VidRecog = ({ denyAccess,  closeSafely}) => {
 
     return (
            
-        !showNextScreen ? <div>
+        !showNextScreen ? 
         
         
         <div className="video-cont">
@@ -145,7 +145,7 @@ const VidRecog = ({ denyAccess,  closeSafely}) => {
       }
 </div>
 
-   </div> : <VideoIdentify hoverIndex={hoverIndex}
+  : <VideoIdentify hoverIndex={hoverIndex}
    clickedUser={clickedUser}  closeSafely={closeSafely}
    clickedUserSrc={clickedUserSrc}
    denyAccess={denyAccess}
