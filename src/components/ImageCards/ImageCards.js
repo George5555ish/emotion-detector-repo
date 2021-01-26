@@ -23,11 +23,11 @@ const ImageCards = ({
       text: "Determine your facial expressions in any video with Artificial Intelligence!",
     },
 
-    {
-      title: "Image Facial Recognition",
+    // {
+    //   title: "Image Facial Recognition",
 
-      text: "Determine facial expressions in any image you upload (of yourself)!",
-    },
+    //   text: "Determine facial expressions in any image you upload (of yourself)!",
+    // },
   
   ];
 

@@ -42,7 +42,9 @@ Try not to be too sad though, it'll cause a glitch xD!
      </Typography>
       </div>
 
-      <Button onClick={changeNotif}>Ok, Got It!</Button>
+      <Button onClick={changeNotif} 
+      className="emotion-notif-btn">
+      Ok, Got It!</Button>
     </div>
    }
        <div className="container">

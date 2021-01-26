@@ -81,7 +81,7 @@ const App = () => {
         Welcome to Express Yourself!
       </Typography>
 
-      <Typography varint="body2" gutterBottom>
+      <Typography variant="body2" gutterBottom style={{color: "rgba(36, 37, 42, 1)", fontSize: "22px", fontWeight: 'bold'}}>
         These are small emotion detectors that use <strong>your </strong>
         facial expressions to decipher how you're feeling at any given point..
         <br />

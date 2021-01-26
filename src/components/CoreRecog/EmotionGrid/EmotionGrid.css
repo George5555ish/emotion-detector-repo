@@ -31,8 +31,13 @@ body {
     font-size: 20px;
     color: #ffffff;
   }
-.emotionDiv2{
+.emotion-notif-btn {
+    background-color: #fff;
+}
 
+.emotion-notif-btn:hover {
+    opacity: 70%;
+    color: #fff;
 }
 
 .container {
